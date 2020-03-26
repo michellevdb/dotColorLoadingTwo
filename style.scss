@@ -1,0 +1,64 @@
+$color-1: #E4E8C6;
+$color-2: #C2D68B;
+$color-3: #80C2B3;
+$color-4: #9DDCCE;
+$color-5: #B7E6D6;
+
+$color: $color-1, $color-2, $color-3, $color-4, $color-5;
+
+@mixin anim() {
+ @keyframes scale {
+    0% {
+      transform: translate(0,0);
+    }
+
+   50% {
+     transform: translate(0,40px);
+   }
+
+   100% {
+     transform: translate(0, 0);
+   }
+  }
+}
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  animation-delay: 1s;
+}
+
+@for $i from 1 through 5 {
+  $deg: $i * 36;
+  .item-#{$i} {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: nth($color, $i);
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+    &:before {
+      position: absolute;
+      content: '';
+      background: white;
+      width: 20px;
+      height: 20px;
+      top: -100%;
+      border-radius: 10px;
+      @include anim();
+      animation: scale 2.5s infinite ease-in-out;
+      animation-delay: 100ms * $i;
+    }
+  }
+}

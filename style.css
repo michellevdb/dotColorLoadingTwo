@@ -1,0 +1,275 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.item-1 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E4E8C6;
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.item-1:before {
+  position: absolute;
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  top: -100%;
+  border-radius: 10px;
+  -webkit-animation: scale 2.5s infinite ease-in-out;
+          animation: scale 2.5s infinite ease-in-out;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.item-2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #C2D68B;
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.item-2:before {
+  position: absolute;
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  top: -100%;
+  border-radius: 10px;
+  -webkit-animation: scale 2.5s infinite ease-in-out;
+          animation: scale 2.5s infinite ease-in-out;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.item-3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #80C2B3;
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.item-3:before {
+  position: absolute;
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  top: -100%;
+  border-radius: 10px;
+  -webkit-animation: scale 2.5s infinite ease-in-out;
+          animation: scale 2.5s infinite ease-in-out;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.item-4 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9DDCCE;
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.item-4:before {
+  position: absolute;
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  top: -100%;
+  border-radius: 10px;
+  -webkit-animation: scale 2.5s infinite ease-in-out;
+          animation: scale 2.5s infinite ease-in-out;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.item-5 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #B7E6D6;
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.item-5:before {
+  position: absolute;
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  top: -100%;
+  border-radius: 10px;
+  -webkit-animation: scale 2.5s infinite ease-in-out;
+          animation: scale 2.5s infinite ease-in-out;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
